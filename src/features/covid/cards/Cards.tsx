@@ -15,8 +15,6 @@ import { selectData } from '../covidSlice'
 const Cards: React.FC = () => {
   const data = useSelector(selectData)
 
-  console.log(data.confirmed.value);
-  
   return (
     <div className={styles.container}>
       <Grid container spacing={1} justify="center">
