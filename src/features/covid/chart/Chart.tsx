@@ -41,16 +41,13 @@ const Chart: React.FC = () => {
         labels: dailyData.map(({ reportDate }) => reportDate),
         datasets: [
           {
-            data: dailyData.map(
-              (data) => data.confirmed.total,
-              console.log(data.confirmed)
-            ),
+            data: dailyData.map((data) => data.confirmed.total),
             label: 'Infected',
             borderColor: '#3333ff',
             fill: true,
           },
           {
-            data: dailyData.map((data) => data.deaths.total,console.log(data.deaths)),
+            data: dailyData.map((data) => data.deaths.total),
             label: 'Deaths',
             borderColor: '#ff3370',
             fill: true,
